@@ -21,6 +21,12 @@ class Robust_Cherrypick:
 			self.train = train
 			self.edges = edges
 			self.test = test	
+
+		if init_by == 'dict':
+
+			self.train=obj['train']
+			self.test=obj['test']
+			self.edges=obj['edges']
 		
 		self.num_node= self.edges.shape[ 0 ]
 		self.num_train= self.train.shape[ 0 ]

@@ -55,6 +55,9 @@ class subset_selection:
 		print res_dict.keys()
 		return res_dict
 			
+		subset_selection()
+		get_data()
+		run_rcpk(reg)
 	def run_subset_loop(self):
 		for trfrac in self.list_of_trfrac:
 			self.modify_obj_train(trfrac)
